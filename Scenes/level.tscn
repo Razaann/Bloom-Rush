@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://c1ovotxattyuk"]
+[gd_scene load_steps=6 format=4 uid="uid://c1ovotxattyuk"]
 
 [ext_resource type="Texture2D" uid="uid://c8qqcynm0i04i" path="res://Assets/animal-town-bw (1).png" id="1_tumq0"]
 [ext_resource type="PackedScene" uid="uid://blovseaxdtni2" path="res://Scenes/player.tscn" id="2_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://bemwdf035cqvw" path="res://Scenes/seed.tscn" id="3_6phgx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k5f4k"]
 texture = ExtResource("1_tumq0")
@@ -136,3 +137,24 @@ tile_set = SubResource("TileSet_6phgx")
 
 [node name="Player" parent="." instance=ExtResource("2_k5f4k")]
 motion_mode = 1
+
+[node name="Seed" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(-104, 40)
+
+[node name="Seed2" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(-56, 64)
+
+[node name="Seed3" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(56, 48)
+
+[node name="Seed4" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(80, -24)
+
+[node name="Seed5" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(96, -64)
+
+[node name="Seed6" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(-32, -48)
+
+[node name="Seed7" parent="." instance=ExtResource("3_6phgx")]
+position = Vector2(-80, -16)

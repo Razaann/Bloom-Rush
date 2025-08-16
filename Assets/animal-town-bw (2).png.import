@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bovu5yg5ngubk"
-path="res://.godot/imported/1-bit_interiors_8px-tilesSet (1).png-410c4cc78dd2462dc666a3cba80f9d98.ctex"
+uid="uid://qcayf5m61c7y"
+path="res://.godot/imported/animal-town-bw (2).png-c436df7fe01e52624fceb87216ecf929.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/1-bit_interiors_8px-tilesSet (1).png"
-dest_files=["res://.godot/imported/1-bit_interiors_8px-tilesSet (1).png-410c4cc78dd2462dc666a3cba80f9d98.ctex"]
+source_file="res://Assets/animal-town-bw (2).png"
+dest_files=["res://.godot/imported/animal-town-bw (2).png-c436df7fe01e52624fceb87216ecf929.ctex"]
 
 [params]
 

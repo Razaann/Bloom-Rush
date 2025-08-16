@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var moveSpeed : float = 150
 var moveDirection : Vector2
+var seed_count : int = 0
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
@@ -27,3 +28,8 @@ func _physics_process(delta):
 		animated_sprite_2d.play("idle")
 	
 	move_and_slide()
+
+
+func add_seed():
+	seed_count += 1
+	print("Seeds: ", seed_count)
