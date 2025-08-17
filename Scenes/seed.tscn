@@ -1,10 +1,39 @@
-[gd_scene load_steps=4 format=3 uid="uid://bemwdf035cqvw"]
+[gd_scene load_steps=8 format=3 uid="uid://bemwdf035cqvw"]
 
 [ext_resource type="Script" uid="uid://daw4qn775sg61" path="res://Codes/seed.gd" id="1_arhpd"]
 [ext_resource type="Texture2D" uid="uid://qcayf5m61c7y" path="res://Assets/animal-town-bw (2).png" id="1_h627t"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pf0hw"]
 radius = 8.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_arhpd"]
+atlas = ExtResource("1_h627t")
+region = Rect2(272, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwbkr"]
+atlas = ExtResource("1_h627t")
+region = Rect2(16, 80, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jya8j"]
+atlas = ExtResource("1_h627t")
+region = Rect2(288, 96, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h627t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_arhpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nwbkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jya8j")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}]
 
 [node name="Seed" type="Node2D"]
 script = ExtResource("1_arhpd")
@@ -14,9 +43,10 @@ script = ExtResource("1_arhpd")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_pf0hw")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_h627t")
-region_enabled = true
-region_rect = Rect2(16, 80, 16, 16)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_h627t")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.212334
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

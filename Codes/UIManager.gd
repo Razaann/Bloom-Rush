@@ -1,8 +1,9 @@
 extends CanvasLayer
 
-var match_time := 10
+var match_time := 15
 var score := 0
 var seeds := 0
+var highscore := 0
 
 # AUTOLOAD DIDNT NEED TO PUT AGAIN IN THE MAIN SCENE
 
@@ -16,13 +17,22 @@ func _ready():
 	countdown_timer.start()
 	update_ui()
 
+func reset():
+	match_time = 15
+	score = 0
+	seeds = 0
+	countdown_timer.start()
+	update_ui()
+
+
 func _on_countdown_timer_timeout():
 	if match_time > 0:
 		match_time -= 1
 		update_ui()
 	else:
 		countdown_timer.stop()
-		game_over()
+		print("Game Over! Final score: %s" % score)
+		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
 
 func add_score(amount: int):
 	score += amount
@@ -47,6 +57,3 @@ func update_ui():
 	timer_label.text = "%s" % match_time
 	score_label.text = "Score: %s" % score
 	seeds_label.text = "Seeds: %s" % seeds
-
-func game_over():
-	print("Game Over! Final score: %s" % score)
