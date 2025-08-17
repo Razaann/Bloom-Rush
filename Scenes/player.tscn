@@ -1,26 +1,26 @@
 [gd_scene load_steps=9 format=3 uid="uid://blovseaxdtni2"]
 
 [ext_resource type="Script" uid="uid://dswf0mwcv4gqe" path="res://Codes/player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://c8qqcynm0i04i" path="res://Assets/animal-town-bw (1).png" id="1_v0iea"]
 [ext_resource type="PackedScene" uid="uid://bwpdy5hf2pdg2" path="res://Scenes/flower.tscn" id="2_6t5aa"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cvnsp"]
-atlas = ExtResource("1_v0iea")
-region = Rect2(128, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6t5aa"]
-atlas = ExtResource("1_v0iea")
-region = Rect2(128, 16, 16, 16)
+[ext_resource type="Texture2D" uid="uid://qcayf5m61c7y" path="res://Assets/animal-town-bw (2).png" id="3_6t5aa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vgqql"]
-atlas = ExtResource("1_v0iea")
+atlas = ExtResource("3_6t5aa")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
+atlas = ExtResource("3_6t5aa")
+region = Rect2(128, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3wgy"]
+atlas = ExtResource("3_6t5aa")
 region = Rect2(128, 32, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fkybt"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cvnsp")
+"texture": SubResource("AtlasTexture_vgqql")
 }],
 "loop": true,
 "name": &"idle",
@@ -28,10 +28,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6t5aa")
+"texture": SubResource("AtlasTexture_fkybt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_vgqql")
+"texture": SubResource("AtlasTexture_x3wgy")
 }],
 "loop": true,
 "name": &"walk",
@@ -47,7 +47,7 @@ flower_scene = ExtResource("2_6t5aa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_fkybt")
-animation = &"idle"
+animation = &"walk"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
