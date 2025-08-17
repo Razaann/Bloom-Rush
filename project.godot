@@ -23,6 +23,7 @@ window/size/viewport_height=768
 [global_group]
 
 Player=""
+plant_tiles=""
 
 [input]
 
