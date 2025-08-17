@@ -1,3 +1,83 @@
-[gd_scene format=3 uid="uid://cunl7j0n7oa2o"]
+[gd_scene load_steps=8 format=3 uid="uid://cunl7j0n7oa2o"]
 
-[node name="MainMenu" type="Node2D"]
+[ext_resource type="FontFile" uid="uid://cw5aumc7o6ajy" path="res://Assets/04B_30__.TTF" id="1_28flt"]
+[ext_resource type="Script" uid="uid://bvs62pbkwight" path="res://Codes/main_menu.gd" id="1_48xlc"]
+[ext_resource type="AudioStream" uid="uid://bix51qbhh8hbk" path="res://Assets/33 - Ditty.mp3" id="3_1ehe0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ce3w2"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ehe0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ce3w2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ehe0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.00392157, 0.921569, 0.372549, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_48xlc")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 192.0
+offset_right = 716.0
+offset_bottom = 365.0
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_28flt")
+theme_override_font_sizes/font_size = 85
+text = "BLOOM
+RUSH"
+horizontal_alignment = 1
+
+[node name="Credit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 384.0
+offset_right = 590.0
+offset_bottom = 421.0
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_28flt")
+theme_override_font_sizes/font_size = 17
+text = "Created By
+Ranprojectt"
+horizontal_alignment = 1
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_1ehe0")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 512.0
+offset_right = 640.0
+offset_bottom = 576.0
+theme_override_colors/font_hover_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0.6, 0.6, 0.6, 0)
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/font_focus_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/font_pressed_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_28flt")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxFlat_ce3w2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ce3w2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
+text = "START"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Bloom Rush"
-run/main_scene="uid://c1ovotxattyuk"
+run/main_scene="uid://cunl7j0n7oa2o"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

@@ -24,7 +24,7 @@ border_color = Color(0.00392157, 0.921569, 0.372549, 1)
 expand_margin_left = 14.0
 expand_margin_right = 10.0
 
-[node name="Control" type="Control"]
+[node name="GameOver" type="Control"]
 layout_mode = 3
 anchor_left = 0.25
 anchor_right = 0.25
@@ -90,7 +90,7 @@ horizontal_alignment = 1
 [node name="RestartButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 398.0
-offset_top = 533.0
+offset_top = 512.0
 offset_right = 630.0
 offset_bottom = 575.0
 theme_override_colors/font_hover_pressed_color = Color(0.00392157, 0.921569, 0.372549, 1)
