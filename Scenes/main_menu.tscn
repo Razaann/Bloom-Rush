@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cunl7j0n7oa2o"]
+[gd_scene load_steps=8 format=3 uid="uid://cunl7j0n7oa2o"]
 
 [ext_resource type="FontFile" uid="uid://cw5aumc7o6ajy" path="res://Assets/04B_30__.TTF" id="1_28flt"]
 [ext_resource type="Script" uid="uid://bvs62pbkwight" path="res://Codes/main_menu.gd" id="1_48xlc"]
 [ext_resource type="AudioStream" uid="uid://bix51qbhh8hbk" path="res://Assets/33 - Ditty.mp3" id="3_1ehe0"]
-[ext_resource type="Texture2D" uid="uid://c1snyxrlqo60x" path="res://icon.svg" id="4_ce3w2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ce3w2"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -15,10 +14,10 @@ border_color = Color(0.8, 0.8, 0.8, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ehe0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 border_color = Color(0.00392157, 0.921569, 0.372549, 1)
 
 [node name="MainMenu" type="Control"]
@@ -40,7 +39,7 @@ theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
 theme_override_fonts/font = ExtResource("1_28flt")
 theme_override_font_sizes/font_size = 85
 text = "BLOOM
-RUSH@"
+RUSH"
 horizontal_alignment = 1
 
 [node name="Credit" type="Label" parent="."]
@@ -80,9 +79,5 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_1ehe0")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_ce3w2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_1ehe0")
 text = "START"
-
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(672, 320)
-texture = ExtResource("4_ce3w2")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
