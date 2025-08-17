@@ -1,46 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g>
-    <rect width="320" height="320" fill="#25342F" fill-rule="evenodd" />
-    <rect width="80" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(120 0)" />
-    <rect width="80" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(120 200)" />
-    <rect width="80" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 100)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 80)" />
-    <rect width="120" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(100 160)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(200 80)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 140)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(200 140)" />
-    <rect width="80" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(120 60)" />
-    <rect width="80" height="40" fill="#01EB5F" fill-rule="evenodd" transform="translate(120 100)" />
-    <rect width="80" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(220 120)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(220 100)" />
-    <rect width="20" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(280 100)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(160 40)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 60)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(100 180)" />
-    <rect width="60" height="100" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 200)" />
-    <rect width="60" height="80" fill="#01EB5F" fill-rule="evenodd" transform="translate(140 240)" />
-    <rect width="20" height="60" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 220)" />
-    <rect width="20" height="60" fill="#01EB5F" fill-rule="evenodd" transform="translate(100 220)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(220 60)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(100 40)" />
-    <rect width="120" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(100 20)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(180 180)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(60 120)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 160)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(240 160)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(80 220)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(60 240)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(140 300)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(160 240)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(200 240)" />
-    <rect width="100" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(200 260)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(180 260)" />
-    <rect width="20" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 120)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(220 280)" />
-    <rect width="20" height="20" fill="#25342F" fill-rule="evenodd" transform="translate(260 240)" />
-    <rect width="20" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(200 220)" />
-    <rect width="40" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(260 220)" />
-    <rect width="60" height="20" fill="#01EB5F" fill-rule="evenodd" transform="translate(220 200)" />
+    <rect width="64" height="64" fill="#25342F" fill-rule="evenodd" fill-opacity="0" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(24 0)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(24 12)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(24 40)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 8)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(32 8)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(4 48)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(4 44)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(16 48)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(36 36)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 36)" />
+    <rect width="24" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 4)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 -1 1 -0 44 32)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 -1 1 -0 56 32)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 -1 1 -0 52 20)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 -1 1 -0 52 36)" />
+    <rect width="24" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 -1 1 -0 48 36)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(44 12)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 16)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 28)" />
+    <rect width="16" height="8" fill="#01EB5F" fill-rule="evenodd" transform="translate(24 20)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 20 16)" />
+    <path d="M0 0L16 0L16 4L0 4L0 0Z" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 8 16)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 12 28)" />
+    <path d="M0 0L12 0L12 4L0 4L0 0Z" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 12 12)" />
+    <path d="M0 0L24 1.90735e-06L24 4L0 4L0 0Z" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-0 1 -1 -0 16 12)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-1 0 0 -1 20 16)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-1 0 0 -1 24 20)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="matrix(-1 0 0 -1 24 32)" />
+    <rect width="24" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 32)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(8 40)" />
+    <rect width="20" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(4 52)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(8 56)" />
+    <rect width="20" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 52)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(44 56)" />
+    <rect width="4" height="12" fill="#01EB5F" fill-rule="evenodd" transform="translate(28 48)" />
+    <rect width="4" height="12" fill="#01EB5F" fill-rule="evenodd" transform="translate(32 52)" />
+    <rect width="4" height="8" fill="#01EB5F" fill-rule="evenodd" transform="translate(36 56)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(20 44)" />
+    <rect width="16" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(36 48)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(56 48)" />
+    <rect width="4" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(40 44)" />
+    <rect width="8" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(52 44)" />
+    <rect width="12" height="4" fill="#01EB5F" fill-rule="evenodd" transform="translate(44 40)" />
   </g>
 </svg>
