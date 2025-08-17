@@ -1,7 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://83vde1lunfcg"]
+[gd_scene load_steps=8 format=3 uid="uid://83vde1lunfcg"]
 
 [ext_resource type="Script" uid="uid://pwvsnop3v50d" path="res://Codes/game_over.gd" id="1_ojehl"]
 [ext_resource type="FontFile" uid="uid://cw5aumc7o6ajy" path="res://Assets/04B_30__.TTF" id="2_8fo1c"]
+[ext_resource type="AudioStream" uid="uid://nadecgdmgfh1" path="res://Assets/lose1.wav" id="3_ek8ke"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14u15"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ek8ke"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eoghk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8fo1c"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.00392157, 0.921569, 0.372549, 1)
+expand_margin_left = 14.0
+expand_margin_right = 10.0
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -20,9 +41,9 @@ anchor_top = 0.2
 anchor_right = 6.4
 anchor_bottom = 0.2
 offset_left = 40.0
-offset_top = 184.0
+offset_top = 181.0
 offset_right = 469.0
-offset_bottom = 235.0
+offset_bottom = 232.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
 theme_override_fonts/font = ExtResource("2_8fo1c")
@@ -38,14 +59,14 @@ anchor_top = 0.2
 anchor_right = 6.4
 anchor_bottom = 0.2
 offset_left = 112.0
-offset_top = 312.0
+offset_top = 310.0
 offset_right = 400.0
-offset_bottom = 346.0
+offset_bottom = 344.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
 theme_override_fonts/font = ExtResource("2_8fo1c")
 theme_override_font_sizes/font_size = 34
-text = "HIGHSCORE:"
+text = "Highscore: 10"
 horizontal_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="."]
@@ -56,26 +77,41 @@ anchor_top = 0.2
 anchor_right = 6.4
 anchor_bottom = 0.2
 offset_left = 168.0
-offset_top = 408.0
+offset_top = 409.5
 offset_right = 342.0
-offset_bottom = 442.0
+offset_bottom = 443.5
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
 theme_override_fonts/font = ExtResource("2_8fo1c")
 theme_override_font_sizes/font_size = 34
-text = "SCORE:"
+text = "Your Score: 10"
 horizontal_alignment = 1
 
 [node name="RestartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 392.0
-offset_top = 528.0
-offset_right = 624.0
-offset_bottom = 570.0
+offset_left = 398.0
+offset_top = 533.0
+offset_right = 630.0
+offset_bottom = 575.0
+theme_override_colors/font_hover_pressed_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/font_hover_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_colors/font_pressed_color = Color(0.00392157, 0.921569, 0.372549, 1)
 theme_override_fonts/font = ExtResource("2_8fo1c")
 theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxFlat_14u15")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ek8ke")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eoghk")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8fo1c")
 text = "RESTART"
 icon_alignment = 1
+
+[node name="LoseSFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ek8ke")
+volume_db = 24.0
+autoplay = true
 
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]

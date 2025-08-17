@@ -5,14 +5,16 @@ extends Control
 @onready var restart_button = $RestartButton
 
 func _ready():
+	UI.hide_ui()
+	
 	# update labels from UI
-	score_label.text = "YOUR SCORE: %s" % UI.score
+	score_label.text = "Your Score: %s" % UI.score
 	
 	# update highscore
 	if UI.score > UI.highscore:
 		UI.highscore = UI.score
 	
-	highscore_label.text = "HIGHSCORE: %s" % UI.highscore
+	highscore_label.text = "Highscore: %s" % UI.highscore
 	
 	restart_button.pressed.connect(_on_restart_button_pressed)
 

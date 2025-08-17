@@ -41,8 +41,8 @@ func _physics_process(delta):
 
 func add_seed():
 	seed_count += 1
-	UI.add_seeds(1)   # show seeds in UI
-	print("Seeds: ", seed_count)
+	UI.add_seeds(1)
+	#print("Seeds: ", seed_count)
 
 
 func plant_seed():
@@ -59,6 +59,7 @@ func plant_seed():
 		
 		if dist <= plant_range: # roughly same row
 			# Plant flower at tile position
+			$SeedSFX.play()
 			var flower = flower_scene.instantiate()
 			flower.global_position = tile.global_position
 			tile.get_parent().add_child(flower)
@@ -70,10 +71,10 @@ func plant_seed():
 			seed_count -= 1
 			UI.use_seed()
 			
-			await get_tree().create_timer(1.0).timeout
 			if is_instance_valid(flower):
 				UI.add_score(1)      # +1 score
-				UI.add_time(1)       # add 5 seconds
+				UI.add_time(1)       # add 1 seconds
+				await get_tree().create_timer(1.0).timeout
 				flower.queue_free()
 			return
 			

@@ -18,6 +18,7 @@ func _ready():
 	update_ui()
 
 func reset():
+	show_ui()
 	match_time = 15
 	score = 0
 	seeds = 0
@@ -57,3 +58,13 @@ func update_ui():
 	timer_label.text = "%s" % match_time
 	score_label.text = "Score: %s" % score
 	seeds_label.text = "Seeds: %s" % seeds
+
+func hide_ui():
+	timer_label.hide()
+	score_label.hide()
+	seeds_label.hide()
+
+func show_ui():
+	timer_label.show()
+	score_label.show()
+	seeds_label.show()
