@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsgne1qflh3jb"]
+
+[ext_resource type="FontFile" uid="uid://cw5aumc7o6ajy" path="res://Assets/04B_30__.TTF" id="1_62x38"]
+[ext_resource type="Script" uid="uid://1edwmhl3j0i7" path="res://Codes/UIManager.gd" id="1_kvude"]
+
+[node name="UserInterface" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_kvude")
+
+[node name="TimerLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.0
+offset_top = 32.0
+offset_right = 31.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_62x38")
+theme_override_font_sizes/font_size = 34
+text = "10"
+horizontal_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 128.0
+offset_top = 32.0
+offset_right = 370.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_62x38")
+theme_override_font_sizes/font_size = 34
+text = "SCORE 10"
+horizontal_alignment = 1
+
+[node name="SeedsLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -368.0
+offset_top = 32.0
+offset_right = -126.0
+offset_bottom = 66.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.00392157, 0.921569, 0.372549, 1)
+theme_override_fonts/font = ExtResource("1_62x38")
+theme_override_font_sizes/font_size = 34
+text = "SEEDS 10"
+horizontal_alignment = 1
+
+[node name="CountdownTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="CountdownTimer" to="." method="_on_countdown_timer_timeout"]
